@@ -5,13 +5,14 @@ class Artist
   attr_reader :songs
 
   include Paramable
+  include Memorable::InstanceMethods
   extend Memorable::ClassMethods
   extend Findable
 
   @@artists = []
 
   def initialize
-    @@artists << self
+    super
     @songs = []
   end
 
