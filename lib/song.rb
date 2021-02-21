@@ -10,8 +10,6 @@ extend Memorable::ClassMethods
 extend Findable
 
 
-
-
   def artist=(artist)
     @artist = artist
   end
