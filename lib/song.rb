@@ -4,6 +4,7 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
+include Paramable
 extend Memorable::ClassMethods
 extend Findable
 
@@ -21,9 +22,5 @@ extend Findable
 
   def artist=(artist)
     @artist = artist
-  end
-
-  def to_param
-    name.downcase.gsub(' ', '-')
   end
 end
