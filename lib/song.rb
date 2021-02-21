@@ -9,7 +9,7 @@ include Memorable::InstanceMethods
 extend Memorable::ClassMethods
 extend Findable
 
-  
+
 
 
   def artist=(artist)
