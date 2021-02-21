@@ -9,16 +9,7 @@ include Memorable::InstanceMethods
 extend Memorable::ClassMethods
 extend Findable
 
-  @@songs = []
-
-  def initialize
-    @@songs << self
-  end
-
-
-  def self.all
-    @@songs
-  end
+  
 
 
   def artist=(artist)
