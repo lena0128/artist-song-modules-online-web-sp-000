@@ -9,6 +9,8 @@ class Artist
   extend Memorable::ClassMethods
   extend Findable
 
+  @@artist = []
+
   def initialize
     super
     @songs = []
